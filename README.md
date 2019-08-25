@@ -1,4 +1,4 @@
-﻿
+
 # Building and Flashing MicroPython
 
  Overview:
@@ -48,20 +48,19 @@ You will need:
 
 9. Call
 
-make BOARD={your-board-model-here}
-
-9. In my case, I call
+		make BOARD={your-board-model-here}
+	In my case, I call
 
 		make BOARD=B_L475E_IOT01A
 
-Upon success, the bottom of the message appears as:
+	Upon success, the bottom of the message appears as:
 
-	GEN build-{your-board-model-here}/firmware.dfu
-	GEN build-{your-board-model-here}/firmware.hex
+		GEN build-{your-board-model-here}/firmware.dfu
+		GEN build-{your-board-model-here}/firmware.hex
 
   
 
-If you have this message, you have successfully built MicroPython.
+	If you have this message, you have successfully built MicroPython.
 
   
 
@@ -70,6 +69,7 @@ If you have this message, you have successfully built MicroPython.
   
 
 1. On the Linux Computer, find the firmware.hex file by calling the command
+
 
 find . -name firmware.hex in the home directory
 
@@ -91,14 +91,13 @@ find . -name firmware.hex in the home directory
 
 2. Expand “Ports (COM & LPT). Look for the STLink Virtual COM Port entry and record the COM port. Once found, close device manager. In my case, my COM port to the STM32 board is COM3.
 
-  ![enter image description here](https://lh3.googleusercontent.com/B_fB32QRwh01Hfr-m9gmQTieWBxNDnc_okpm19mrswF8_gaIHINLUZhTHUuPPFNj4PXsLAhC0ixW "Finding the COM Port in Device Manager")
+![STM32 COM Port on Deviec Manager.](https://lh3.googleusercontent.com/zMuWvsmk8PZ1kh2lc8s04SMKd4aKwScp8HWUv02gEPFtH66eVajKv7i0YTe-sJKFEsvANgqN47te "STM32 COM Port on Device Manager")
 
 3. Open a serial communication utility software such as PuTTY.
 
 4. Select “Serial” under Connection Type. Enter the COM port you recorded into the Serial Line field. Enter 115200 for speed (baudrate). Click Open.
 
-  ![enter image description here](https://lh3.googleusercontent.com/LNZD_LdqCcaPcMuu9ltVkdxw-DPulNIyxluslvOgMNxdn1p20Uv4EBxK5fyQoiwc9n450z6dYh1v "PuTTY Configuration for STM32 Board")
-
+![PuTTY Configuration for STM32 Board.](https://lh3.googleusercontent.com/rNBAGxMpglh9S_YgfcFAS5pPDw3CMrWAXjZ1Tb76lBhXtrdv9W6701I1iRQ44uDOtmo5SxeYJs1i)
 
 5. Click inside the empty serial terminal window. Press the reset button on the board. A REPL display appears on the screen. In the REPL display, you can call the print function for python such as print(“Hello, World!”).
 
