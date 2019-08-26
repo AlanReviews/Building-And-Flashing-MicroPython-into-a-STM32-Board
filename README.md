@@ -71,7 +71,7 @@ You will need:
 
 		find . -name firmware.hex 
 
-in the home directory
+	in the home directory
 
 2. Copy the firmware.hex file onto a USB drive or SD card.
 
@@ -87,11 +87,11 @@ in the home directory
 
 ## Testing Micropython Flash
 
-1. On a Windows Computer, Open Windows Device Manager.
+1. On a Windows Computer, open Windows Device Manager.
 
-2. Expand “Ports (COM & LPT). Look for the STLink Virtual COM Port entry and record the COM port. Once found, close device manager. In my case, my COM port to the STM32 board is COM3.
+2. Expand “Ports (COM & LPT)". Look for the STLink Virtual COM Port entry and record the COM port. Once found, close device manager. In my case, my COM port to the STM32 board is COM3.
 
-![STM32 COM Port on Deviec Manager.](https://lh3.googleusercontent.com/zMuWvsmk8PZ1kh2lc8s04SMKd4aKwScp8HWUv02gEPFtH66eVajKv7i0YTe-sJKFEsvANgqN47te "STM32 COM Port on Device Manager")
+![STM32 COM Port on Device Manager.](https://lh3.googleusercontent.com/zMuWvsmk8PZ1kh2lc8s04SMKd4aKwScp8HWUv02gEPFtH66eVajKv7i0YTe-sJKFEsvANgqN47te "STM32 COM Port on Device Manager")
 
 3. Open a serial communication utility software such as PuTTY.
 
@@ -99,7 +99,9 @@ in the home directory
 
 ![PuTTY Configuration for STM32 Board.](https://lh3.googleusercontent.com/rNBAGxMpglh9S_YgfcFAS5pPDw3CMrWAXjZ1Tb76lBhXtrdv9W6701I1iRQ44uDOtmo5SxeYJs1i)
 
-5. Click inside the empty serial terminal window. Press the reset button on the board. A REPL display appears on the screen. In the REPL display, you can call the print function for python such as print(“Hello, World!”).
+5. Click inside the empty serial terminal window. Press the reset button on the board. A REPL display appears on the screen. In the REPL display, you can call the print function for python such as
+
+		print(“Hello, World!”).
 
 6. If the message you tried to print successfully shows up in the terminal, congratulations, you have successfully flashed micropython onto your microcontroller board.
 
