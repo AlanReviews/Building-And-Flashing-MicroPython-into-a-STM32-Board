@@ -105,11 +105,11 @@ in the home directory
 
 7. To turn on an LED on the board, create an LED object and call the on function. If you want the LED off, call the off function.
 
-		Creating a LED object
+		# Creating a LED object
 		myled = pyb.LED(1)
-		Calling the on function
+		# Calling the on function
 		myled.on()
-		Calling the off function
+		# Calling the off function
 		myled.off()
 
    Or
