@@ -10,8 +10,8 @@ You will need:
 
 - Computer(s) with Linux and Windows installed
 - STM32 Nucleo or STM32 Discovery microcontroller board
-- STM32 ST-Link Utility software
-- Serial communication utility software such as PuTTY
+- [STM32 ST-Link Utility software](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-utilities/stsw-link009.html)
+- [Serial communication utility software such as PuTTY](https://putty.org/)
 - MicroUSB cable
 - A USB drive or SD card with some free storage
 
@@ -23,7 +23,7 @@ You will need:
 
 2. Clone the MicroPython source repository by calling
 
-		git clone <https://github.com/micropython/micropython/>
+		git clone https://github.com/micropython/micropython/
 
 3. Go to the MicroPython directory by calling
 
@@ -59,7 +59,6 @@ You will need:
 		GEN build-{your-board-model-here}/firmware.hex
 
   
-
 	If you have this message, you have successfully built MicroPython.
 
   
@@ -70,8 +69,9 @@ You will need:
 
 1. On the Linux Computer, find the firmware.hex file by calling the command
 
+		find . -name firmware.hex 
 
-find . -name firmware.hex in the home directory
+in the home directory
 
 2. Copy the firmware.hex file onto a USB drive or SD card.
 
