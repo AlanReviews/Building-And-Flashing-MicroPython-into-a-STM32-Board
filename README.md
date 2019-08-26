@@ -55,11 +55,11 @@ You will need:
 
 	Upon success, the bottom of the message appears as:
 
-		GEN build-{your-board-model-here}/firmware.dfu
-		GEN build-{your-board-model-here}/firmware.hex
+		GEN build-B_L475E_IOT01A/firmware.dfu
+		GEN build-B_L475E_IOT01A/firmware.hex
 
   
-	If you have this message, you have successfully built MicroPython.
+	If you have a similar or exact message, you have successfully built MicroPython.
 
   
 
